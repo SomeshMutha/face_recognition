@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition Control</title>
+    <script>
+        function startRecognition() {
+            fetch('/start_camera/')
+            .then(response => response.text())
+            .then(data => alert(data));
+        }
+
+        function stopRecognition() {
+            fetch('/stop_camera/')
+            .then(response => response.text())
+            .then(data => alert(data));
+        }
+    </script>
+</head>
+<body>
+    <h1>Face Recognition</h1>
+    <button onclick="startRecognition()">Start Camera</button>
+    <button onclick="stopRecognition()">Stop Camera</button>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore Django database
+db.sqlite3
+
+# Ignore virtual environment folders (if any)
+venv/
+
+# Ignore logs and system files
+*.log
+.DS_Store
