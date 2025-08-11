@@ -17,6 +17,7 @@ for filename in os.listdir(KNOWN_IMG_DIR):
 video = cv2.VideoCapture(0)
 while True:
     ret, frame = video.read()
+    frame=cv2.flip(frame,1)
     if not ret:
         continue
     small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
