@@ -28,4 +28,3 @@ def stop_camera(request):
         return HttpResponse("Camera stopped.")
     else:
         return HttpResponse("Camera is not running.")
-    
